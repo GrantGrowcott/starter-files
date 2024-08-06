@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+  --grey: #d3d3d3;
+  --lightGrey: #313131;
+  --blue: #1888ff;
+  --darkGrey: #1C1C1C;
+  --black: #000000;
+  --white: #FFFFFF;
+  --darkGreen: #003e29;
+  --green: #2bbb35;
+  --creme: #efeba7;
+  --red:#FF0000;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* Margin */
+  --margin-xxs:0.25rem;
+  --margin-xs:0.5rem;
+  --margin-s:0.75rem;
+  --margin-m:1rem;
+  --margin-l:1.25rem;
+  --margin-xl:1.75rem;
+  --margin-xxl:2.5rem;
+  
+  /* Padding  */
+  --padding-xxs:0.25rem;
+  --padding-xs:0.5rem;
+  --padding-s:0.75rem;
+  --padding-m:1rem;
+  --padding-l:1.25rem;
+  --padding-xl:1.75rem;
+  --padding-xxl:2.5rem;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* Font Sizes */
+
+  --font-xs:1rem;
+  --font-s:1.25rem;
+  --font-m:1.6rem;
+  --font-l:2rem;
+  --font-xl:3rem;
+  --font-xxl:4rem;
+  --font-xxxl:5rem;
+
+ }
+
+
+.home,
+.services,
+.products,
+.contact-us,
+.sign-up,
+.marketing,
+.consulting {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:var(--white);
+  font-size: var(--font-xxxl);
 }
 
-.App-link {
-  color: #61dafb;
+.home {
+  background-image: url('./images/img-1.jpg');
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.services {
+  background-image: url('./images/img-2.jpg');
+}
+
+.products {
+  background-image: url('./images/img-3.jpg');
+}
+
+.contact-us {
+  background-image: url('./images/img-4.jpg');
+}
+
+.sign-up {
+  background-image: url('./images/img-7.jpg');
+}
+
+.marketing {
+  background-image: url('./images/img-6.jpg');
+}
+
+.consulting {
+  background-image: url('./images/img-5.jpg');
+  background-position: bottom;
+}
+
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("RobotoMono-Medium"),
+    url("./fonts/RobotoMono-Medium.ttf") format("truetype");
 }

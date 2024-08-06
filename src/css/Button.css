@@ -1,0 +1,21 @@
+  .btn {
+    padding: var(--padding-xs) var(--padding-l);
+    border-radius: var( --padding-xxs);
+    outline: none;
+    border: none;
+    font-size: var(--font-s);
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--blue);
+  }
+  
+  .btn:hover {
+    padding: var(--padding-xs) var(--padding-l);
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: var(--white);
+    border-radius: var(--padding-xxs);
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
+  
