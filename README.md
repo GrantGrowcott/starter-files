@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to install 
+## How to install
 
-1. Being by cloning the project in your IDE at https://github.com/GrantGrowcott/starter-files.git
+1. Begin by cloning the project in your IDE at https://github.com/GrantGrowcott/starter-files.git
 2. Node Modules must be installed first. At the root of the project, type `npm install`
 3. You're all set up!!!
 
