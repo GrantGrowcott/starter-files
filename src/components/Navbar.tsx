@@ -1,18 +1,17 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 import Dropdown from "./ServicesDropdown";
 import { AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai";
 import { setClick } from "../redux/slices/NavigationSlice";
-import { useAppDispatch,useAppSelector } from "../redux/useApp";
+import { useAppDispatch, useAppSelector } from "../redux/useApp";
+import { FaAngleDown } from "react-icons/fa";
+import { iconSizes } from "../constants";
 
 function Navbar() {
-
-
-  const dispatch = useAppDispatch()
-  const { click } = useAppSelector((state) => state.navigation);  
-
+  const dispatch = useAppDispatch();
+  const { click } = useAppSelector((state) => state.navigation);
 
   const [dropdown, setDropdown] = useState(false);
 
@@ -20,14 +19,12 @@ function Navbar() {
   const closeMobileMenu = () => dispatch(setClick(false));
 
   const onMouseEnter = () => {
-      setDropdown(true); 
+    setDropdown(true);
   };
 
   const onMouseLeave = () => {
-      setDropdown(false);
-  
+    setDropdown(false);
   };
-
 
   return (
     <>
@@ -39,11 +36,11 @@ function Navbar() {
         <div className="nav-icon" onClick={handleClick}>
           {click ? (
             <span className="icon">
-              <AiFillCloseCircle size={35} className="nav-color" />
+              <AiFillCloseCircle size={iconSizes.navigation} className="nav-color" />
             </span>
           ) : (
             <span className="icon">
-              <AiOutlineMenu size={35} className="nav-color" />
+              <AiOutlineMenu size={iconSizes.navigation} className="nav-color" />
             </span>
           )}
         </div>
@@ -55,11 +52,11 @@ function Navbar() {
           </li>
           <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
-              Services <i className="fas fa-caret-down" />
-              {dropdown && <Dropdown />}
+              Services <FaAngleDown size={iconSizes.downArrow} className="fa-bars" />
             </Link>
+            {dropdown && <Dropdown />}
           </li>
-          <li className="nav-item" >
+          <li className="nav-item">
             <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
               Products
             </Link>

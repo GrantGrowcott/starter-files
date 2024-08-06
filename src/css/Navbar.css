@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: var(--font-s);
   }
 
   .nav-icon {
@@ -14,7 +14,7 @@
   .nav-color {
     color: var(--white);
   }
-  
+
   .navbar-logo {
     color: var(--white);
     justify-self: start;
@@ -25,8 +25,8 @@
   }
   
   .fa-firstdraft {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
+    margin-left: var(--margin-xs);
+    font-size: var(--font-m)
   }
   
   .nav-menu {
@@ -37,7 +37,7 @@
     text-align: center;
     width: 70vw;
     justify-content:space-around;
-    margin-right: 2rem;
+    margin-right: var(--margin-xl)
   }
   
   .nav-item {
@@ -50,7 +50,7 @@
   .nav-links {
     color: var(--white);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: var(--paddinng-xs) var(--paddinng-m)
   }
   
   .nav-links:hover {
@@ -72,15 +72,19 @@
   }
   
   @media screen and (max-width: 960px) {
-    
-  
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;
-      width: 50%;
+      width: 60%;
       height: 90vh;
       position: absolute;
-      top: 80px;
+      top: 5rem;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -95,10 +99,18 @@
     }
   
     .nav-links {
-      text-align: center;
-      padding: 2rem;
+      text-align: left;
+      padding: var(--padding-xl);
       width: 100%;
       display: table;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 3em;
+      
     }
   
     .nav-links:hover {
@@ -119,26 +131,26 @@
       top: 0;
       right: 0;
       transform: translate(-100%, 60%);
-      font-size: 1.8rem;
+      font-size: var(--font-l);
       cursor: pointer;
     }
   
     .fa-times {
       color: var(--white);
-      font-size: 2rem;
+      font-size: var(--font-l);
     }
   
     .nav-links-mobile {
       display: block;
       text-align: center;
-      padding: 1.5rem;
-      margin: 2rem auto;
+      padding: var(--padding-xl);
+      margin: var(--margin-xl) auto;
       border-radius: 4px;
       width: 80%;
       background: var(--blue);
       text-decoration: none;
       color: var(--white);
-      font-size: 1.5rem;
+      font-size: var(--font-m)
     }
   
     .nav-links-mobile:hover {

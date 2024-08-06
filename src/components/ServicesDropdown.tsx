@@ -15,10 +15,16 @@ function Dropdown() {
     setDropDown(!dropdown);
   };
 
+  interface MenuItem {
+    title: string;
+    path: string;
+    cName: string;
+  }
+  
   return (
     <>
       <ul onClick={handleClick} className={dropdown ? "dropdown-menu clicked" : "dropdown-menu"}>
-        {ServicesMenuItems.map((item: any, index: any) => {
+        {ServicesMenuItems.map((item: MenuItem, index: number) => {
           return (
             <li key={index}>
               <Link className={item.cName} to={item.path}>
