@@ -3,6 +3,7 @@
     width: 200px;
     position: absolute;
     top: 80px;
+    left:0px;
     list-style: none;
     text-align: start;
   }
@@ -38,7 +39,7 @@
       background: var(--red);
       width: 200px;
       position: absolute;
-      top: -3px;
+      top: -5px;
       left: 100%;
       list-style: none;
       text-align: start;
