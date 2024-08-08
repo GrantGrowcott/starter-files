@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-color: var(--darkGrey);
+}
+
 :root {
   --grey: #d3d3d3;
   --lightGrey: #313131;
@@ -15,6 +19,8 @@
   --green: #2bbb35;
   --creme: #efeba7;
   --red:#FF0000;
+  --orange: #FFA500;
+
 
   /* Margin */
   --margin-xxs:0.25rem;
@@ -24,6 +30,8 @@
   --margin-l:1.25rem;
   --margin-xl:1.75rem;
   --margin-xxl:2.5rem;
+  --margin-xxxl:5rem;
+
   
   /* Padding  */
   --padding-xxs:0.25rem;
@@ -46,54 +54,11 @@
 
  }
 
+ h1 {
+  color: var(--black);
+  font-size: var(--font-xs)
+ }
 
-.home,
-.services,
-.products,
-.contact-us,
-.sign-up,
-.marketing,
-.consulting {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color:var(--white);
-  font-size: var(--font-xxxl);
-}
-
-.home {
-  background-image: url('./images/img-1.jpg');
-  
-}
-
-.services {
-  background-image: url('./images/img-2.jpg');
-}
-
-.products {
-  background-image: url('./images/img-3.jpg');
-}
-
-.contact-us {
-  background-image: url('./images/img-4.jpg');
-}
-
-.sign-up {
-  background-image: url('./images/img-7.jpg');
-}
-
-.marketing {
-  background-image: url('./images/img-6.jpg');
-}
-
-.consulting {
-  background-image: url('./images/img-5.jpg');
-  background-position: bottom;
-}
 
 
 @font-face {

@@ -1,0 +1,188 @@
+.outer__container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home {
+    position: relative; 
+  }
+  
+  .home__container {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%; 
+    margin-top: 10rem;
+  }
+
+  .home__container h1 {
+    color: var(--orange);
+    padding-bottom: var(--padding-s);
+
+  }
+
+  .home__container h2 {
+    color: var(--white);
+    padding-bottom: var(--padding-s);
+    font-size: var(--font-xxl);
+    line-height: var(--font-xxxl);
+    margin: var(--margin-l) 0
+
+  }
+
+  .home__container p {
+    color: var(--white);
+    padding-bottom: var(--padding-s);
+    font-size: var(--font-xs);
+    line-height: var(--font-m);
+
+  }
+
+  .home__inner {
+    flex: 1;
+    text-align: left;
+  }
+
+  .home__buttons {
+    gap: 20px
+  }
+
+  .home__buttons__about,  .home__buttons__schedule {
+    margin-right: var(--margin-m);
+    padding: var(--padding-l) var(--padding-xxl);
+    border-style: none;
+    border-radius: var(--padding-s);
+  } 
+
+  .home__buttons__schedule {
+    background-color: var(--orange);
+  }
+
+  .home__buttons__about {
+    background-color: var(--white);
+  }
+
+
+  
+  /* Three Cards */
+
+  .three__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+   
+  }
+
+  .three__cards__container {
+    flex:1;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: var(--padding-l);
+    text-align: center;
+    
+  }
+
+  .three__cards__icon {
+    background-color: var(--darkGrey);
+    border-radius: 50%;
+    width: 50px; /* Can adjust size */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .three__cards__container h4{
+    font-size: var(--font-m);
+    margin-bottom: var(--margin-m);
+    
+  }
+
+
+  .three__cards__container p{
+    font-size: var(--font-xs);
+    
+  }
+
+
+  /* About Company */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--margin-xxxl);
+  
+  }
+
+  .about__description {
+    flex: 1;
+    text-align: left;
+    
+  }
+
+  .about__description h3{
+    color: var(--grey);
+  }
+
+  .about__description h4{
+    color: var(--white);
+    font-size: var(--font-m);
+    margin: var(--margin-m) 0;
+    
+  }
+
+  .about__container {
+    flex: 1;
+    text-align: center;
+  }
+
+  .about__container img{
+    height: 20rem;
+    width: 20rem;
+    
+  }
+
+
+
+
+
+
+  @media (max-width: 1100px) {
+
+    .three__cards {
+      grid-template-columns: 1fr; /* Change to one column */
+  }
+  .about {
+    flex-direction: column;
+  
+  }
+  }
+
+
+
+
+
+
+  
+
+  
+  
+  
