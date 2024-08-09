@@ -4,8 +4,13 @@ import { sliderImages } from "../../constants";
 import styles from "../../styles/ImageSliderStyles";
 import ThreeCards from "../ThreeCards";
 import AboutCompany from "../AboutCompany";
+import ExploreServices from "../ExploreServices";
+import RecentWork from "../RecentWork";
+import QuickInquiry from "../QuickInquiry";
 
 export default function Home() {
+ 
+
   return (
     // Relative Positioning
     <div className="home">
@@ -34,7 +39,10 @@ export default function Home() {
       </div>
       <div className="outer__container">
         <ThreeCards />
-        <AboutCompany/>
+        <AboutCompany />
+        <ExploreServices />
+        <RecentWork />
+        <QuickInquiry/>
       </div>
     </div>
   );

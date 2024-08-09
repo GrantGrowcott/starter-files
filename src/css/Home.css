@@ -1,10 +1,23 @@
 .outer__container {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container__column {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -57,7 +70,8 @@
   }
 
   .home__buttons {
-    gap: 20px
+    gap: 20px;
+    
   }
 
   .home__buttons__about,  .home__buttons__schedule {
@@ -65,6 +79,7 @@
     padding: var(--padding-l) var(--padding-xxl);
     border-style: none;
     border-radius: var(--padding-s);
+    cursor: pointer;
   } 
 
   .home__buttons__schedule {
@@ -85,7 +100,7 @@
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 4rem;
+    margin-top: var(--margin-xxxl)
    
   }
 
@@ -122,6 +137,8 @@
   }
 
 
+
+
   /* About Company */
 
   .about {
@@ -144,21 +161,187 @@
 
   .about__description h4{
     color: var(--white);
-    font-size: var(--font-m);
+    font-size: var(--font-xl);
     margin: var(--margin-m) 0;
+    line-height: var(--font-xl);
+    
+  }
+
+  .about__description h5{
+    color: var(--white);
+    font-size: var(--font-l);
+    margin: var(--margin-m) 0;
+    line-height: var(--font-xl);
+    
+  }
+
+  .about__description p{
+    color: var(--grey);
+    line-height: var(--font-l);
     
   }
 
   .about__container {
     flex: 1;
     text-align: center;
+    margin-left: var(--margin-m);
   }
 
   .about__container img{
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 20px;
     
   }
+
+  .more__about {
+    background-color: var(--orange);
+    padding: var(--padding-l) var(--padding-xl);
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    margin-top: var(--margin-l);
+    cursor: pointer;
+  }
+
+
+  /* Explore Services */
+
+  .explore__services{
+    text-align: center;
+    margin-top: var(--margin-xxxl);
+    
+  }
+
+.explore__services h3{
+  color: var(--grey);
+}
+
+
+.explore__services h4{
+  color: var(--white);
+  font-size: var(--font-xl);
+  margin: var(--margin-m) 0;
+  line-height: var(--font-xl);
+}
+
+.explore__container {
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(3, 1fr);
+
+}
+
+.explore__container__item {
+  border: white solid 1px;
+  height: 400px;
+  text-align: left;
+  
+  
+  }
+
+.explore__container__item img{ 
+    max-height: 200px; 
+    width: 100%; 
+    object-fit: cover; 
+    
+    }
+
+.explore__container__item__description {
+       padding: var(--padding-l);
+      
+      }
+
+.explore__container__item__description h5{
+    color: var(--white);
+    font-size: var(--font-m);
+    margin-bottom: var(--margin-m);
+    
+    }
+
+.explore__container__item__description p{
+      color: var(--grey);
+      
+      }
+.explore__container__button {
+  background-color: transparent;
+  cursor: pointer;
+  border-style: none;
+  margin-top: var(--margin-m);
+
+}    
+
+.explore__container__button h6{
+  color: var(--grey);
+  font-size: var(--font-xs);
+
+} 
+
+
+/* Recent Work */
+
+.recent__work {
+  text-align: center;
+  margin: var(--margin-xxxl) 0;
+
+}
+
+.recent__work h3{
+ color: var(--grey);
+
+}
+
+.recent__work h4{
+  color: var(--white);
+  font-size: var(--font-xl);
+  margin: var(--margin-m) 0;
+  line-height: var(--font-xl);
+
+}
+
+.work__categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 var(--padding-xxxl);
+  flex-wrap: wrap;
+}
+
+.work__categories__button {
+  flex-basis: calc(20% - 10px); 
+  margin: 5px; 
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+
+}
+
+.work__categories__button h5 {
+  color: var(--grey);
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+.work__container__images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  margin: var(--margin-xxl) 0;
+}
+
+.work__images {
+  height: 25rem;
+  width: 25rem;
+
+}
+
+
+
+
+
+
 
 
 
@@ -174,6 +357,46 @@
     flex-direction: column;
   
   }
+
+  .about__container {
+    margin-left:0;
+    margin-top: var(--margin-l);
+  }
+
+  .about__container img{
+    height: 15rem;
+    width: 15rem;
+    
+  }
+
+  .explore__container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work__container__images {
+      grid-template-columns: 1fr;
+    }
+
+    .work__images {
+      height: 20rem;
+      width: 20rem;
+    }
+
+  }
+
+  @media (max-width: 600px) {
+
+    .explore__container {
+      grid-template-columns: 1fr
+      
+      }
+
+      .work__images {
+        height: 15rem;
+        width: 15rem;
+      
+      }
+    
   }
 
 

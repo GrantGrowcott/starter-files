@@ -4,7 +4,7 @@ import "../css/ImageSlider.css";
 import styles from "../styles/ImageSliderStyles";
 
 
-type ImageSliderProps = {
+export type ImageSliderProps = {
   images: {
     url: string;
     alt: string;

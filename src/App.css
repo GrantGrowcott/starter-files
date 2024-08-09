@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-  --grey: #d3d3d3;
+  --grey: #a8a8a8;
   --lightGrey: #313131;
   --blue: #1888ff;
   --darkGrey: #1C1C1C;
@@ -30,7 +30,7 @@ body {
   --margin-l:1.25rem;
   --margin-xl:1.75rem;
   --margin-xxl:2.5rem;
-  --margin-xxxl:5rem;
+  --margin-xxxl:10rem;
 
   
   /* Padding  */
@@ -41,6 +41,7 @@ body {
   --padding-l:1.25rem;
   --padding-xl:1.75rem;
   --padding-xxl:2.5rem;
+  --padding-xxl:5rem;
 
   /* Font Sizes */
 
