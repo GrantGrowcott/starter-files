@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--font-s);
+    font-size: var(--font-xs);
+    
   }
 
   .nav-icon {
@@ -32,12 +33,11 @@
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 70vw;
     justify-content:space-around;
-    margin-right: var(--margin-xl)
+    margin-left:5rem
   }
   
   .nav-item {
@@ -88,6 +88,7 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      margin-left: 0;
     }
   
     .nav-menu.active {

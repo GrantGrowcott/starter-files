@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import NavigationSlice from "./slices/NavigationSlice";
+import ImagesSlice from "./slices/ImagesSlice";
 
 
 export const store = configureStore({
     reducer: {
-        navigation: NavigationSlice
+        navigation: NavigationSlice,
+        images:ImagesSlice
      
     },
   });
